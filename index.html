@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payal | A Fronted Web-Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55e831c9c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fronted Web-Developer</p>
+                <h1>Hi, I'm  <span>Payal</span> <br> Raj From Pakistan.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Cover croped img2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly motivated and results-oriented aspiring Front-End Developer with a strong foundation in web development technologies like HTML, CSS, and JavaScript. Possessing a passion for creating user-friendly and visually appealing web experiences. Eager to learn, collaborate, and contribute to a fast-paced development environment. Although I may be new to the professional field, I'm a quick learner with a dedication to continuous improvement. I've actively participated in personal project. Feel free to explore my portfolio to see examples of my work and get a better sense of my capabilities.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <h4><span>Frontend Web Developer</span><br></h4>
+                            <li>Skilled in crafting web pages using HTML</li>
+                            <li>Applying dynamic styles with CSS</li>
+                            <li>Implementing interactive elements with JavaScript</li>
+                            <li>Adept in Building Responsive Layouts with Bootstrap</li>
+                            <li>Proficient in Enhancing User Interaction with jQuery</li>
+                            <h4><span>Presentation Designer</span><br></h4>
+                            <li>Creating compelling presentations to visually communicate ideas.</li>
+                            <h4><span>Word Expert</span><br> </h4>
+                            <li>Document creation and formatting</li>
+                            <li>Advanced features like macros, mail merge, tables of contents, and referencing</li>
+                            <li>Collaboration and track changes</li>
+                            <h4><span>Excel Expert</span><br> </h4>
+                            <li>Data entry, cleaning, and manipulation</li>
+                            <li>Formula creation and functions</li>
+                            <li>Data visualization with charts and graphs</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <h4><span>2024-Present</span></h4>
+                                <li>Bachelor of Science in Computer Science (BSCS) at Shaheed Zulfikar Ali Bhutto Institute of Science and Technology</li>
+                            <h4><span>2024-2025</span></h4>
+                                <li>Diploma in HDSE (Higher Diploma in Software Engineering) at Aptech Computer Learning</li>
+                            <h4><span>2023</span></h4>
+                                <li>Higher Secondary School (FSc) at Govt Degree Collage</li>
+                            <h4><span>2021</span></h4>
+                                <li>Secondary School at The Educators</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Services-------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I bring your website visions to life using HTML, CSS, JavaScript, and powerful frameworks like Bootstrap and jQuery. This expertise allows me to build responsive layouts that adapt to any device, integrate interactive elements, and optimize website flow for a seamless user experience.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <h2>Presentation Designer</h2>
+                    <p> I create visually compelling presentations that effectively communicate your message and leave a lasting impression. I can transform complex data into clear and engaging visuals, making it easier for your audience to understand key takeaways</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-word"></i>
+                    <h2>Word & Excel Expert</h2>
+                    <p> I can help you create professional and polished documents in Word that are easy to navigate and collaborate on. I can leverage the power of Excel to transform your data into actionable insights through insightful charts, graphs, and reports. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------Portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Cara.png" >
+                    <div class="layer">
+                        <h3>E-commerce Website</h3>
+                        <p>"Cara" is a fully functional e-commerce website.Built from scratch using HTML, CSS, and JavaScript, Cara demonstrates my ability to create user-friendly shopping experiences without external frameworks. This fully responsive website ensures a seamless experience across all devices</p>
+                        <a href="https://cava-payal.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/edenrobe.png" >
+                    <div class="layer">
+                        <h3>Responsive Edenrobe Clone</h3>
+                        <p>Built a compelling replica of a popular Pakistani clothing brand’s website using HTML, 
+                            CSS, JavaScript, and Bootstrap. This project demonstrates my ability to 
+                            translate brand identity into a functional and user-friendly e-commerce experience.</p>
+                        <a href="https://edenrobe-clone.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/calculatorr.png" >
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>This is a fully functional calculator I built from scratch using HTML, CSS, and JavaScript. It demonstrates my ability to create a user-friendly interface and implement complex logic without relying on external frameworks.</p>
+                        <a href="https://calculator-assign-payal.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Tic Tac Toe.png" >
+                    <div class="layer">
+                        <h3>Tic Tac Toe</h3>
+                        <p>I built a fully functional Tic Tac Toe game using only HTML, CSS, and JavaScript. This project showcases my ability to create interactive experiences with user input handling, game logic implementation, and DOM manipulation, all without relying on external frameworks.</p>
+                        <a href="https://tic-tac-toe-by-payal.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Stone, Paper and Scissors.png" >
+                    <div class="layer">
+                        <h3>Stone Paper Scissors Game</h3>
+                        <p>I built an engaging Stone Paper Scissors game with a twist - it's never-ending!  Using HTML, CSS, and JavaScript (no frameworks), I implemented user input handling, computer opponent logic, and a continuous game loop. </p>
+                        <a href="https://stone-paper-scissor-by-payal.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Excel Dashboard.png" >
+                    <div class="layer">
+                        <h3>Yearly Store Dashboard</h3>
+                        <p>I developed a comprehensive yearly store performance analysis tool using Microsoft Excel. This project demonstrates my ability to leverage Excel formulas, charts, and pivot tables to create an insightful dashboard for visualizing sales trends, customer data.</p>
+                        <a href="https://docs.google.com/spreadsheets/d/1ebPUPX3dOI6QFVy4rxlevX6LXNZGp7PS/edit?usp=drive_link&ouid=116384847451855622283&rtpof=true&sd=true"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Hover ppt.png" >
+                    <div class="layer">
+                        <h3>Presentation with Hover Effects</h3>
+                        <p>I created an engaging PowerPoint presentation that utilizes hover effects to enhance user experience. I implemented interactive elements that reveal additional information or navigate between slides upon hovering. </p>
+                        <a href="https://docs.google.com/presentation/d/1fd5wkC1QzQwkryF4fWo_ueeIkLQDVuZ6/edit?usp=drive_link&ouid=116384847451855622283&rtpof=true&sd=true"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Aptech ppt.png" >
+                    <div class="layer">
+                        <h3>A Morphing Presentation</h3>
+                        <p>I designed a visually captivating presentation that leverages the power of Morph transitions in PowerPoint. This presentation seamlessly transforms information and visuals, creating a dynamic and engaging experience for the audience. </p>
+                        <a href="projects/Aptech.ppt.mp4"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Hyperlink ppt.png" >
+                    <div class="layer">
+                        <h3>Presentation with Hyperlinks</h3>
+                        <p> I created an engaging presentation with hyperlinks, allowing viewers to delve deeper into topics by seamlessly navigating to relevant websites, documents, or specific sections within the slides.</p>
+                        <a href="https://docs.google.com/presentation/d/1jUw-Wb224yhom9s3_4g62fZjyUCRXyA2/edit?usp=drive_link&ouid=116384847451855622283&rtpof=true&sd=true"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Covid ppt.png" >
+                    <div class="layer">
+                        <h3>Dynamic Transitions </h3>
+                        <p>Using Morph transitions, I created a visually engaging presentation that effectively explains the virus, its impacts, and preventative measures with clear visuals and seamless transitions.</p>
+                        <a href="projects/COVID.mp4"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Wheel type ppt.png" >
+                    <div class="layer">
+                        <h3>Morphing Wheel</h3>
+                        <p>I designed an engaging presentation with a Morph-animated spinning wheel to reveal information or trigger actions, keeping the audience captivated.</p>
+                        <a href="projects/Wheel type ppt.mp4"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Flyer.png" >
+                    <div class="layer">
+                        <h3> Flyer Designed in Word </h3>
+                        <p>I designed a visually compelling flyer using Microsoft Word. This project demonstrates my ability to leverage Word's layout and design features to create professional-looking flyers for any purpose</p>
+                        <a href="projects/APTECH FLYER PDF.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Ad Form.png" >
+                    <div class="layer">
+                        <h3> Admission Form </h3>
+                        <p>A beautifully designed and informative admission form, ensuring clarity and a user-friendly experience for applicants.</p>
+                        <a href="projects/Admission Form.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cv.png" >
+                    <div class="layer">
+                        <h3> CV Template</h3>
+                        <p>A visually attractive CV template, designed to help job seekers stand out and effectively present their qualifications.</p>
+                        <a href="projects/Cv.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bussiness  card.png" >
+                    <div class="layer">
+                        <h3> Business Card Design </h3>
+                        <p>A professional and eye-catching business card design, promoting brand identity and fostering connections.</p>
+                        <a href="projects/Bussiness Card.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/frame.png" >
+                    <div class="layer">
+                        <h3> Birthday Frame Design </h3>
+                        <p>A festive and customizable birthday collage frame design, perfect for showcasing multiple pictures and creating a cherished memory for the recipient.</p>
+                        <a href="projects/Birthday Frame.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/brochure design.png" >
+                    <div class="layer">
+                        <h3> Brochure Design </h3>
+                        <p> A well-structured and engaging brochure design, effectively communicating information and promoting a product or service.</p>
+                        <a href="projects/Brochure design.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/certificate.png" >
+                    <div class="layer">
+                        <h4>Certificate Design</h4>
+                        <p>A professional and formal certificate design, suitable for acknowledging achievements and recognizing contributions within a company.</p>
+                        <a href="projects/certificate.pdf"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------Contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> piyushikumari35@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>0330-2564955</p>
+                    <div class="social-icons">
+                        <a href="https://www.upwork.com/freelancers/~01c0720f4ff76694aa?s=1110580755057594368"><i class="fa-brands fa-upwork"></i></a>
+                        <a href="https://www.linkedin.com/in/payal-raj-60ba73305/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Payal-Raj "><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="resume/Payal_Resume-Updated.pdf" class="btn" download> Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="a723f56f-4b3b-4fbb-8853-c426c958081e">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn"> Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Payal. All Rights Reserved.  Made with HTML, CSS, and JavaScript </p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
