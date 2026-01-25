@@ -15,55 +15,58 @@
           ></script>
   </head>
   <body>
-<!-- Header -->
-<div id="header">
-  <div class="container">
-    <!-- Navbar -->
-    <nav>
-      <img src="images/logo.png" class="logo" />
-      <ul id="sidemenu">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-      </ul>
-      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <!-- Navbar -->
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
 
-    <!-- Header Content Section -->
-    <div class="header-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
-      <!-- Left: Text Content -->
-      <div class="header-left">
-        <p>Software Developer</p>
-        <h1>
-          Hi, I'm <span>Payal</span>
-          Raj From Pakistan.
-        </h1>
-      </div>
+        <!-- Header Content Section -->
+        <div class="header-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+          <!-- Left: Text Content -->
+          <div class="header-left">
+            <p>Software Developer</p>
+            <h1>
+              Hi, I'm <span>Payal</span>
+              Raj From Pakistan.
+            </h1>
+          </div>
 
-      <!-- Right: Circular Image -->
-      <div class="header-right" >
-        <img src="images/My_pfp.jpg" alt="Profile Picture" class="circle-img" />
+          <!-- Right: Circular Image -->
+          <div class="header-right" >
+            <img src="images/My_pfp.jpg" alt="Profile Picture" class="circle-img" />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-
-
     <!-- About Page -->
     <div id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/Cover croped img2.jpg" />
+            <img src="images/MyPfp.jpeg" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-            Hi, I'm a 20-year-old from Karachi, Pakistan, with a story to tell. I started out on a path to become a medical student, but my curiosity and passion for problem-solving led me to a new love - computer science! Now, I'm a driven and ambitious Front-End Developer in the making, with a solid grasp of HTML, CSS, and JavaScript. I'm all about crafting web experiences that are both beautiful and user-friendly. I thrive in fast-paced environments, collaborating with others to create something amazing. Although I'm new to the professional scene, I'm a quick learner, always looking to improve and grow. In my free time, I've worked on personal projects that showcase my skills and creativity. Take a peek at my portfolio to see what I can do! I'm excited to connect and explore opportunities to contribute to the tech world.
+            Passionate and detail-oriented Computer Science student with hands-on 
+            experience in Python, Java, JavaFX, C, SQL, and web development (HTML, CSS, 
+            JavaScript, Bootstrap). Skilled in OOP, DSA-based application development, and 
+            UI/UX design. Adept at building functional projects, managing Git/GitHub 
+            repositories, and applying technical skills to solve real-world problems. Seeking 
+            an internship or entry-level software development role to contribute to innovative 
+            solutions and grow professionally.
             </p>
 
             <div class="tab-titles">
@@ -72,21 +75,43 @@
               </p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>UI/UX Designing</li>
-                <li>SEO</li>
-                <li>Git & GitHub</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-                <li>jQuery</li>
-                <li>MS Office</li>
-                <li>Problem Solving</li>
-                <li>Leadership</li>
-              </ul>
-            </div>
+              <div class="tab-contents active-tab" id="skills">
+                <div class="skills-category">
+                  <h5>Programming Languages</h5>
+                  <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                  </ul>
+                </div>
+
+                <div class="skills-category">
+                  <h5>Frameworks</h5>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaFX</li>
+                    <li>UI/UX Designing</li>
+                    <li>Figma</li>
+                    <li>jQuery</li>
+                  </ul>
+                </div>
+
+                <div class="skills-category">
+                  <h5>Tools & Other Skills</h5>
+                  <ul>
+                    <li>Git & GitHub</li>
+                    <li>Blender</li>
+                    <li>3D Modeling</li>
+                    <li>MS Office</li>
+                    <li>Problem Solving</li>
+                    <li>Leadership</li>
+                  </ul>
+                </div>
+              </div>
 
             <div class="tab-contents" id="education">
               <ul>
@@ -116,36 +141,45 @@
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
           <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
+            <i class="fa-solid fa-globe"></i>
+            <h2>Web Application Development</h2>
             <p>
-              I bring your website visions to life using HTML, CSS, JavaScript,
-              and powerful frameworks like Bootstrap and jQuery. This expertise
-              allows me to build responsive layouts that adapt to any device,
-              integrate interactive elements, and optimize website flow for a
-              seamless user experience.
+              I build responsive and interactive web applications using HTML, CSS, JavaScript,
+              and modern frameworks. My focus is on clean UI, smooth user experience,
+              and performance-optimized layouts that work seamlessly across all devices.
             </p>
           </div>
+
           <div>
-            <i class="fa-solid fa-person-chalkboard"></i>
-            <h2>Presentation Designer</h2>
+            <i class="fa-brands fa-java"></i>
+            <h2>Java Application Development</h2>
             <p>
-              I create visually compelling presentations that effectively
-              communicate your message and leave a lasting impression. I can
-              transform complex data into clear and engaging visuals, making it
-              easier for your audience to understand key takeaways
+              I develop structured desktop applications using Java, JavaFX, and MySQL,
+              applying Object-Oriented Programming principles and clean architecture
+              to build scalable, maintainable software solutions.
             </p>
           </div>
+
           <div>
-            <i class="fa-regular fa-file-word"></i>
-            <h2>Word & Excel Expert</h2>
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>UI/UX Design</h2>
             <p>
-              I can help you create professional and polished documents in Word
-              that are easy to navigate and collaborate on. I can leverage the
-              power of Excel to transform your data into actionable insights
-              through insightful charts, graphs, and reports.
+              I design intuitive user interfaces and user experiences using Figma,
+              focusing on usability, accessibility, and modern visual design that enhances
+              user engagement and product clarity.
             </p>
           </div>
+
+          <div>
+            <i class="fa-solid fa-cube"></i>
+            <h2>3D Modeling & Visualization</h2>
+            <p>
+              I create high-quality 3D models and visual assets using Blender for
+              product visualization, conceptual designs, and creative digital projects,
+              blending technical precision with artistic creativity.
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
@@ -154,7 +188,30 @@
     <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">My Work</h1>
+        <div class="portfolio-filters">
+        <span class="filter-btn active" data-filter="all">All</span>
+        <span class="filter-btn" data-filter="web">Web Apps</span>
+        <span class="filter-btn" data-filter="java">Java Apps</span>
+        <span class="filter-btn" data-filter="uiux">UI/UX</span>
+        <span class="filter-btn" data-filter="3d">3D Modeling</span>
+      </div>
+
         <div class="work-list">
+          
+          <div class="work">
+            <img src="images/expanzo.png" />
+            <div class="layer">
+              <h3>Expanzo</h3>
+              <p>
+                A fully functional expense tracking web application built using HTML, CSS, and JavaScript.
+                Users can create accounts with login and sign-up features, manage income and expenses,
+                and view a clean, intuitive interface. Includes Terms & Conditions for clarity and
+                responsibility, making finance tracking simple and user-friendly.
+              </p>
+              <a href="https://expanzo.netlify.app/"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
           <div class="work">
             <img src="images/pri.png" />
             <div class="layer">
@@ -249,7 +306,6 @@
           </div>
         </div>
           <span id="dots"></span>
-        
           <span id="more">
            <div class="work-list"> 
             <div class="work">
