@@ -1,16 +1,17 @@
 let tablinks = document.getElementsByClassName("tab-links");
 let tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname){
-    for(tablink of tablinks){
+function opentab(event, tabname) {
+    for (let tablink of tablinks) {
         tablink.classList.remove("active-link");
     }
-    for(tabcontent of tabcontents){
+    for (let tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
 
 let sidemenu = document.getElementById("sidemenu");
 function openmenu(){
@@ -21,18 +22,30 @@ function closemenu(){
     sidemenu.style.right = "-200px"
 }
 
-function myFunction() {
-    let dots = document.getElementById("dots");
-    let moreText = document.getElementById("more");
-    let btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.work-list .work');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.getAttribute('data-filter');
+
+    projects.forEach(project => {
+      if (filter === 'all' || project.classList.contains(filter)) {
+        project.style.display = 'block'; 
+      } else {
+        project.style.display = 'none';
+      }
+    });
+    
+    if (typeof AOS !== 'undefined') {
+        AOS.refresh();
     }
-  }
+  });
+});
+
+
+
+

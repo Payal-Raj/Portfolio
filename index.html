@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payal | A Fronted Web-Developer</title>
+    <title>Payal | A Software Developer</title>
         <!-- MyCSS -->
           <link rel="stylesheet" href="style.css" />
         <!-- AOS Library -->
@@ -16,11 +16,11 @@
   </head>
   <body>
     <!-- Header -->
-    <div id="header">
+    <header id="header">
       <div class="container">
         <!-- Navbar -->
         <nav>
-          <img src="images/logo.png" class="logo" />
+          <img src="images/logo.png" alt="Logo" class="logo" />
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -34,7 +34,6 @@
 
         <!-- Header Content Section -->
         <div class="header-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
-          <!-- Left: Text Content -->
           <div class="header-left">
             <p>Software Developer</p>
             <h1>
@@ -42,531 +41,655 @@
               Raj From Pakistan.
             </h1>
           </div>
-
-          <!-- Right: Circular Image -->
           <div class="header-right" >
             <img src="images/My_pfp.jpg" alt="Profile Picture" class="circle-img" />
           </div>
         </div>
       </div>
-    </div>
-    <!-- About Page -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/MyPfp.jpeg" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-            Passionate and detail-oriented Computer Science student with hands-on 
-            experience in Python, Java, JavaFX, C, SQL, and web development (HTML, CSS, 
-            JavaScript, Bootstrap). Skilled in OOP, DSA-based application development, and 
-            UI/UX design. Adept at building functional projects, managing Git/GitHub 
-            repositories, and applying technical skills to solve real-world problems. Seeking 
-            an internship or entry-level software development role to contribute to innovative 
-            solutions and grow professionally.
-            </p>
+    </header>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+    <main>
+      <!-- About Page -->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1" data-aos="zoom-in" data-aos-offset="200">
+              <img src="images/MyPfp.jpeg" alt="About Me Image"/>
             </div>
-              <div class="tab-contents active-tab" id="skills">
-                <div class="skills-category">
-                  <h5>Programming Languages</h5>
-                  <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                  </ul>
+            <div class="about-col-2" data-aos="zoom-in" data-aos-offset="300">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+              Passionate and detail-oriented Computer Science student with hands-on 
+              experience in Python, Java, JavaFX, C, SQL, and web development (HTML, CSS, 
+              JavaScript, Bootstrap). Skilled in OOP, DSA-based application development, and 
+              UI/UX design. Adept at building functional projects, managing Git/GitHub 
+              repositories, and applying technical skills to solve real-world problems. Seeking 
+              an internship or entry-level software development role to contribute to innovative 
+              solutions and grow professionally.
+              </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link"  onclick="opentab(event, 'skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab( event,'education')">Education</p>
+              </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <div class="skills-category">
+                    <h5>Programming Languages</h5>
+                    <ul>
+                      <li>Python</li>
+                      <li>Java</li>
+                      <li>C</li>
+                      <li>JavaScript</li>
+                      <li>SQL</li>
+                    </ul>
+                  </div>
+
+                  <div class="skills-category">
+                    <h5>Frameworks</h5>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>Bootstrap</li>
+                      <li>JavaFX</li>
+                      <li>UI/UX Designing</li>
+                      <li>Figma</li>
+                      <li>jQuery</li>
+                    </ul>
+                  </div>
+
+                  <div class="skills-category">
+                    <h5>Tools & Other Skills</h5>
+                    <ul>
+                      <li>Git & GitHub</li>
+                      <li>Blender</li>
+                      <li>3D Modeling</li>
+                      <li>MS Office</li>
+                      <li>Problem Solving</li>
+                      <li>Leadership</li>
+                    </ul>
+                  </div>
                 </div>
 
-                <div class="skills-category">
-                  <h5>Frameworks</h5>
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                    <li>JavaFX</li>
-                    <li>UI/UX Designing</li>
-                    <li>Figma</li>
-                    <li>jQuery</li>
-                  </ul>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <h4><span>2024-Present</span></h4>
+                  <li>
+                    Bachelor of Science in Computer Science (BSCS) at Shaheed
+                    Zulfikar Ali Bhutto Institute of Science and Technology
+                  </li>
+                  <h4><span>2024-2025</span></h4>
+                  <li>
+                    Diploma in HDSE (Higher Diploma in Software Engineering) at
+                    Aptech Computer Learning
+                  </li>
+                  <h4><span>2023</span></h4>
+                  <li>Higher Secondary School (FSc) at Govt Degree Collage</li>
+                  <h4><span>2021</span></h4>
+                  <li>Secondary School at The Educators</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------Services-------->
+      <section id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div data-aos="zoom-in">
+              <i class="fa-solid fa-globe"></i>
+              <h2>Web Application Development</h2>
+              <p>
+                I build responsive and interactive web applications using HTML, CSS, JavaScript,
+                and modern frameworks. My focus is on clean UI, smooth user experience,
+                and performance-optimized layouts that work seamlessly across all devices.
+              </p>
+            </div>
+
+            <div data-aos="zoom-in">
+              <i class="fa-brands fa-java"></i>
+              <h2>Java Application Development</h2>
+              <p>
+                I develop structured desktop applications using Java, JavaFX, and MySQL,
+                applying Object-Oriented Programming principles and clean architecture
+                to build scalable, maintainable software solutions.
+              </p>
+            </div>
+
+            <div data-aos="zoom-in">
+              <i class="fa-solid fa-pen-nib"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                I design intuitive user interfaces and user experiences using Figma,
+                focusing on usability, accessibility, and modern visual design that enhances
+                user engagement and product clarity.
+              </p>
+            </div>
+
+            <div data-aos="zoom-in">
+              <i class="fa-solid fa-cube"></i>
+              <h2>3D Modeling & Visualization</h2>
+              <p>
+                I create high-quality 3D models and visual assets using Blender for
+                product visualization, conceptual designs, and creative digital projects,
+                blending technical precision with artistic creativity.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!---------Portfolio-------------->
+      <section id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="portfolio-filters">
+            <span class="filter-btn active" data-filter="all">All</span>
+            <span class="filter-btn" data-filter="web">Web Apps</span>
+            <span class="filter-btn" data-filter="java">Java Apps</span>
+            <span class="filter-btn" data-filter="uiux">UI/UX</span>
+            <span class="filter-btn" data-filter="3d">3D Modeling</span>
+          </div>
+
+          <div class="work-list">
+            <div class="work all 3d">
+              <img src="images/singleRoomApartment.png" alt="Blender single room project" />
+              <div class="layer">
+                <h3>Single Bedroom Apartment — 3D Interior</h3>
+                <p>
+                  A complete 3D interior design project created in Blender as a final exam, featuring a fully modeled bedroom and kitchen. Includes detailed object modeling, materials, textures, lighting, and animations, demonstrating strong 3D modeling and scene composition skills.
+                </p>
+                <a href="projects/PayalFinal.mp4" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all 3d">
+              <img src="images/studyRoom.png" alt="blender studyRoom" />
+              <div class="layer">
+                <h3>Study Table Workspace — 3D Model</h3>
+                <p>
+                  A detailed 3D workspace scene modeled in Blender, featuring a study setup with chair, lamp, PC, books, and a bookshelf. Includes realistic materials, structured composition, and animation, showcasing strong 3D modeling and scene design skills.
+                </p>
+                <a href="projects/Project.mp4" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all java">
+              <img src="images/readify.png" alt="readify java"/>
+              <div class="layer">
+                <h3>Readify — Learning System (DSA Project)</h3>
+                <p>
+                  A complete desktop learning system built with Java, JavaFX, and MySQL for Data Structures & Algorithms. Focused on real-world architecture, data handling, and system logic, showcasing strong DSA understanding and application design skills.
+                </p>
+                <a href="projects/readify.mp4" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all java" >
+              <img src="images/quizHub.png" alt="QuizHub"/>
+              <div class="layer">
+                <h3>QuizHub — Smart Quiz Application</h3>
+                <p>
+                A desktop-based smart quiz system built with JavaFX, featuring secure admin and student portals, live MCQ quizzes, timers, instant results, and interactive charts. Showcases strong OOP concepts, UI design, logic building, and database integration.
+                </p>
+                <a href="projects/QuizHub.mp4" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all uiux">
+              <img src="images/hussainRemedies.png" alt="hussainRemedies"/>
+              <div class="layer">
+                <h3>Hussain Remedies</h3>
+                <p>
+                  A fully responsive online pharmacy website designed in Figma as a freelancing project to showcase
+                  rapid development capabilities and AI-assisted workflow integration.
+                  Built in a short timeframe, showcasing fast delivery, clean UI, responsive design, and efficient AI-assisted development.
+                </p>
+                <a href="https://www.figma.com/make/nQivLC5LOOnEQlGxeTZLpg/Pharmacy-Website?p=f&t=SeBgB8TpumrVxU8C-0&fullscreen=1" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all uiux">
+              <img src="images/eShelf.png" alt="eShelf"/>
+              <div class="layer">
+                <h3>eShelf — Online Learning Platform</h3>
+                <p>
+                  An online learning platform assignment project designed as a personalized digital book system.
+                  The platform features user accounts, personalized dashboards, book recommendations based on
+                  reading history, progress tracking, and activity history management. This project demonstrates
+                  system design thinking, user-centered interface planning, and structured digital learning concepts.
+                </p>
+                <a href="projects/eShelf.mp4" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all uiux">
+              <img src="images/expanzoFigma.png" alt="expanzo" />
+              <div class="layer">
+                <h3>Expanzo — UI Design</h3>
+                <p>
+                  A high-fidelity UI design for the Expanzo expense tracker, created as part of a 3rd semester
+                  Human-Computer Interaction (HCI) course quiz and completed within 45 minutes.
+                  The design includes structured layouts, dropdown menus, and data visualization through graphs,
+                  reflecting advanced UI thinking, interaction design, and rapid problem-solving under time constraints.
+                </p>
+                <a href="projects/expanzoFigma.mp4" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all uiux" >
+              <img src="images/glamHub.png" alt="glamHub"/>
+              <div class="layer">
+                <h3>Glam Hub</h3>
+                <p>
+                  A UI/UX design project created as part of my 3rd semester Human-Computer Interaction (HCI) course quiz.
+                  Designed within a 45-minute time limit, this project includes login and signup screens, service sections,
+                  and structured user flows. It reflects fast design thinking, usability principles, and early-stage
+                  interface design skills.
+                </p>
+                <a href="projects/glamhub.mp4" target="_blank"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all uiux">
+            <img src="images//starBucks.png" alt="starBucks" />
+            <div class="layer">
+              <h3>Coffee Shop UI</h3>
+              <p>
+                A modern and visually appealing coffee shop mobile UI design created in Figma.
+                This project focuses on clean layout, color harmony, user-friendly navigation,
+                and aesthetic component design. It demonstrates strong UI/UX fundamentals,
+                visual hierarchy, and professional interface structuring for real-world app design.
+              </p>
+              <a href="projects/coffeShop.mp4" target="_blank"><i class="fa-solid fa-link"></i></a>
+            </div>
+            </div>
+
+            <div class="work all web" >
+              <img src="images/expanzo.png"  alt="expanzo"/>
+              <div class="layer">
+                <h3>Expanzo</h3>
+                <p>
+                  A fully functional expense tracking web application built using HTML, CSS, and JavaScript.
+                  Users can create accounts with login and sign-up features, manage income and expenses,
+                  and view a clean, intuitive interface. Includes Terms & Conditions for clarity and
+                  responsibility, making finance tracking simple and user-friendly.
+                </p>
+                <a href="https://expanzo.netlify.app/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all web" >
+              <img src="images/pri.png" alt="prime-fitness-best-gym"/>
+              <div class="layer">
+                <h3>Prime Fitness</h3>
+                <p>
+                  A responsive website designed for a seamless user experience
+                  across desktops, tablets, and mobile devices. This front-end
+                  development project utilized HTML, CSS, and JavaScript to create
+                  a user-friendly fitness platform. This project demonstrates my
+                  ability to translate design concepts into functional and
+                  responsive web experiences.
+                </p>
+                <a href="https://prime-fitness-best-gym.netlify.app/"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="work all web" >
+              <img src="images/Cara.png" alt="Cara" />
+              <div class="layer">
+                <h3>E-commerce Website</h3>
+                <p>
+                  "Cara" is a fully functional e-commerce website.Built from
+                  scratch using HTML, CSS, and JavaScript, Cara demonstrates my
+                  ability to create user-friendly shopping experiences without
+                  external frameworks. This fully responsive website ensures a
+                  seamless experience across all devices
+                </p>
+                <a href="https://cava-payal.netlify.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+            
+            <div class="work all web" >
+              <img src="images/edenrobe.png"  alt="edenrobe"/>
+              <div class="layer">
+                <h3>Responsive Edenrobe Clone</h3>
+                <p>
+                  Built a compelling replica of a popular Pakistani clothing
+                  brand’s website using HTML, CSS, JavaScript, and Bootstrap. This
+                  project demonstrates my ability to translate brand identity into
+                  a functional and user-friendly e-commerce experience.
+                </p>
+                <a href="https://edenrobe-clone.netlify.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+            
+            <div class="work all web">
+              <img src="images/calculatorr.png"  alt="calculator"/>
+              <div class="layer">
+                <h3>Calculator</h3>
+                <p>
+                  This is a fully functional calculator I built from scratch using
+                  HTML, CSS, and JavaScript. It demonstrates my ability to create
+                  a user-friendly interface and implement complex logic without
+                  relying on external frameworks.
+                </p>
+                <a href="https://calculator-assign-payal.netlify.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="work all web">
+              <img src="images/Tic Tac Toe.png" alt="tic-tac-toe-by-payal"/>
+              <div class="layer">
+                <h3>Tic Tac Toe</h3>
+                <p>
+                  I built a fully functional Tic Tac Toe game using only HTML,
+                  CSS, and JavaScript. This project showcases my ability to create
+                  interactive experiences with user input handling, game logic
+                  implementation, and DOM manipulation, all without relying on
+                  external frameworks.
+                </p>
+                <a href="https://tic-tac-toe-by-payal.netlify.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="work all web">
+              <img src="images/Stone, Paper and Scissors.png" alt="stone-paper-scissor-by-payal"/>
+              <div class="layer">
+                <h3>Stone Paper Scissors Game</h3>
+                <p>
+                  I built an engaging Stone Paper Scissors game with a twist -
+                  it's never-ending! Using HTML, CSS, and JavaScript (no
+                  frameworks), I implemented user input handling, computer
+                  opponent logic, and a continuous game loop.
+                </p>
+                <a href="https://stone-paper-scissor-by-payal.netlify.app/"
+                  ><i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="work all" >
+                <img src="images/Excel Dashboard.png" alt="dashboard"/>
+                <div class="layer">
+                  <h3>Yearly Store Dashboard</h3>
+                  <p>
+                    I developed a comprehensive yearly store performance analysis
+                    tool using Microsoft Excel. This project demonstrates my
+                    ability to leverage Excel formulas, charts, and pivot tables
+                    to create an insightful dashboard for visualizing sales
+                    trends, customer data.
+                  </p>
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1ebPUPX3dOI6QFVy4rxlevX6LXNZGp7PS/edit?usp=drive_link&ouid=116384847451855622283&rtpof=true&sd=true"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
                 </div>
+            </div>
 
-                <div class="skills-category">
-                  <h5>Tools & Other Skills</h5>
-                  <ul>
-                    <li>Git & GitHub</li>
-                    <li>Blender</li>
-                    <li>3D Modeling</li>
-                    <li>MS Office</li>
-                    <li>Problem Solving</li>
-                    <li>Leadership</li>
-                  </ul>
+            <div class="work all">
+                <img src="images/Hover ppt.png" alt="hover ppt"/>
+                <div class="layer">
+                  <h3>Presentation with Hover Effects</h3>
+                  <p>
+                    I created an engaging PowerPoint presentation that utilizes
+                    hover effects to enhance user experience. I implemented
+                    interactive elements that reveal additional information or
+                    navigate between slides upon hovering.
+                  </p>
+                  <a
+                    href="https://docs.google.com/presentation/d/1fd5wkC1QzQwkryF4fWo_ueeIkLQDVuZ6/edit?usp=drive_link&ouid=116384847451855622283&rtpof=true&sd=true"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
                 </div>
-              </div>
+            </div>
 
-            <div class="tab-contents" id="education">
-              <ul>
-                <h4><span>2024-Present</span></h4>
-                <li>
-                  Bachelor of Science in Computer Science (BSCS) at Shaheed
-                  Zulfikar Ali Bhutto Institute of Science and Technology
-                </li>
-                <h4><span>2024-2025</span></h4>
-                <li>
-                  Diploma in HDSE (Higher Diploma in Software Engineering) at
-                  Aptech Computer Learning
-                </li>
-                <h4><span>2023</span></h4>
-                <li>Higher Secondary School (FSc) at Govt Degree Collage</li>
-                <h4><span>2021</span></h4>
-                <li>Secondary School at The Educators</li>
-              </ul>
+            <div class="work all">
+                <img src="images/Aptech ppt.png" alt="Aptech"/>
+                <div class="layer">
+                  <h3>A Morphing Presentation</h3>
+                  <p>
+                    I designed a visually captivating presentation that leverages
+                    the power of Morph transitions in PowerPoint. This
+                    presentation seamlessly transforms information and visuals,
+                    creating a dynamic and engaging experience for the audience.
+                  </p>
+                  <a href="projects/Aptech.ppt.mp4"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+            </div>
+
+            <div class="work all">
+                <img src="images/Hyperlink ppt.png" alt="hyperlinks" />
+                <div class="layer">
+                  <h3>Presentation with Hyperlinks</h3>
+                  <p>
+                    I created an engaging presentation with hyperlinks, allowing
+                    viewers to delve deeper into topics by seamlessly navigating
+                    to relevant websites, documents, or specific sections within
+                    the slides.
+                  </p>
+                  <a
+                    href="https://docs.google.com/presentation/d/1jUw-Wb224yhom9s3_4g62fZjyUCRXyA2/edit?usp=drive_link&ouid=116384847451855622283&rtpof=true&sd=true"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+            </div>
+
+            <div class="work all">
+                <img src="images/Covid ppt.png" alt="covid"/>
+                <div class="layer">
+                  <h3>Dynamic Transitions</h3>
+                  <p>
+                    Using Morph transitions, I created a visually engaging
+                    presentation that effectively explains the virus, its impacts,
+                    and preventative measures with clear visuals and seamless
+                    transitions.
+                  </p>
+                  <a href="projects/COVID.mp4"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+            </div>
+
+            <div class="work all">
+                <img src="images/Wheel type ppt.png" alt="wheel"/>
+                <div class="layer">
+                  <h3>Morphing Wheel</h3>
+                  <p>
+                    I designed an engaging presentation with a Morph-animated
+                    spinning wheel to reveal information or trigger actions,
+                    keeping the audience captivated.
+                  </p>
+                  <a href="projects/Wheel type ppt.mp4"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+            </div>
+
+            <div class="work all" >
+                <img src="images/Flyer.png" alt="flyer"/>
+                <div class="layer">
+                  <h3>Flyer Designed in Word</h3>
+                  <p>
+                    I designed a visually compelling flyer using Microsoft Word.
+                    This project demonstrates my ability to leverage Word's layout
+                    and design features to create professional-looking flyers for
+                    any purpose
+                  </p>
+                  <a href="projects/APTECH FLYER PDF.pdf"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+            </div>
+
+            <div class="work all">
+                <img src="images/Ad Form.png" alt="form" />
+                <div class="layer">
+                  <h3>Admission Form</h3>
+                  <p>
+                    A beautifully designed and informative admission form,
+                    ensuring clarity and a user-friendly experience for
+                    applicants.
+                  </p>
+                  <a href="projects/Admission Form.pdf"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+            </div>
+
+            <div class="work all" >
+                <img src="images/cv.png" alt="cv"/>
+                <div class="layer">
+                  <h3>CV Template</h3>
+                  <p>
+                    A visually attractive CV template, designed to help job
+                    seekers stand out and effectively present their
+                    qualifications.
+                  </p>
+                  <a href="projects/Cv.pdf"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work all">
+                <img src="images/bussiness  card.png" alt="card" />
+                <div class="layer">
+                  <h3>Business Card Design</h3>
+                  <p>
+                    A professional and eye-catching business card design,
+                    promoting brand identity and fostering connections.
+                  </p>
+                  <a href="projects/Bussiness Card.pdf"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+            </div>
+
+            <div class="work all">
+                <img src="images/frame.png" alt="frame" />
+                <div class="layer">
+                  <h3>Birthday Frame Design</h3>
+                  <p>
+                    A festive and customizable birthday collage frame design,
+                    perfect for showcasing multiple pictures and creating a
+                    cherished memory for the recipient.
+                  </p>
+                  <a href="projects/Birthday Frame.pdf"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+            </div>
+
+            <div class="work all">
+                <img src="images/brochure design.png"  alt="brochure"/>
+                <div class="layer">
+                  <h3>Brochure Design</h3>
+                  <p>
+                    A well-structured and engaging brochure design, effectively
+                    communicating information and promoting a product or service.
+                  </p>
+                  <a href="projects/Brochure design.pdf"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+            </div>
+
+            <div class="work all">
+                <img src="images/certificate.png" alt="certificate" />
+                <div class="layer">
+                  <h4>Certificate Design</h4>
+                  <p>
+                    A professional and formal certificate design, suitable for
+                    acknowledging achievements and recognizing contributions
+                    within a company.
+                  </p>
+                  <a href="projects/certificate.pdf"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-------Services-------->
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-globe"></i>
-            <h2>Web Application Development</h2>
-            <p>
-              I build responsive and interactive web applications using HTML, CSS, JavaScript,
-              and modern frameworks. My focus is on clean UI, smooth user experience,
-              and performance-optimized layouts that work seamlessly across all devices.
-            </p>
-          </div>
+      </section>
 
-          <div>
-            <i class="fa-brands fa-java"></i>
-            <h2>Java Application Development</h2>
-            <p>
-              I develop structured desktop applications using Java, JavaFX, and MySQL,
-              applying Object-Oriented Programming principles and clean architecture
-              to build scalable, maintainable software solutions.
-            </p>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-pen-nib"></i>
-            <h2>UI/UX Design</h2>
-            <p>
-              I design intuitive user interfaces and user experiences using Figma,
-              focusing on usability, accessibility, and modern visual design that enhances
-              user engagement and product clarity.
-            </p>
-          </div>
-
-          <div>
-            <i class="fa-solid fa-cube"></i>
-            <h2>3D Modeling & Visualization</h2>
-            <p>
-              I create high-quality 3D models and visual assets using Blender for
-              product visualization, conceptual designs, and creative digital projects,
-              blending technical precision with artistic creativity.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!---------Portfolio-------------->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="portfolio-filters">
-        <span class="filter-btn active" data-filter="all">All</span>
-        <span class="filter-btn" data-filter="web">Web Apps</span>
-        <span class="filter-btn" data-filter="java">Java Apps</span>
-        <span class="filter-btn" data-filter="uiux">UI/UX</span>
-        <span class="filter-btn" data-filter="3d">3D Modeling</span>
-      </div>
-
-        <div class="work-list">
-          
-          <div class="work">
-            <img src="images/expanzo.png" />
-            <div class="layer">
-              <h3>Expanzo</h3>
+      <!------------Contact---------------->
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left" data-aos="zoom-in">
+              <h1 class="sub-title">Contact Me</h1>
               <p>
-                A fully functional expense tracking web application built using HTML, CSS, and JavaScript.
-                Users can create accounts with login and sign-up features, manage income and expenses,
-                and view a clean, intuitive interface. Includes Terms & Conditions for clarity and
-                responsibility, making finance tracking simple and user-friendly.
+                <i class="fa-solid fa-envelope"></i> piyushikumari35@gmail.com
               </p>
-              <a href="https://expanzo.netlify.app/"><i class="fa-solid fa-link"></i></a>
+              <p><i class="fa-solid fa-phone"></i>0333-2200635</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/payal-raj-60ba73305/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/Payal-Raj "
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+              <a href="resume/PayalResume (1).pdf" class="btn" download>
+                Download CV</a
+              >
             </div>
-          </div>
-
-          <div class="work">
-            <img src="images/pri.png" />
-            <div class="layer">
-              <h3>Prime Fitness</h3>
-              <p>
-                A responsive website designed for a seamless user experience
-                across desktops, tablets, and mobile devices. This front-end
-                development project utilized HTML, CSS, and JavaScript to create
-                a user-friendly fitness platform. This project demonstrates my
-                ability to translate design concepts into functional and
-                responsive web experiences.
-              </p>
-              <a href="https://prime-fitness-best-gym.netlify.app/"><i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/Cara.png" />
-            <div class="layer">
-              <h3>E-commerce Website</h3>
-              <p>
-                "Cara" is a fully functional e-commerce website.Built from
-                scratch using HTML, CSS, and JavaScript, Cara demonstrates my
-                ability to create user-friendly shopping experiences without
-                external frameworks. This fully responsive website ensures a
-                seamless experience across all devices
-              </p>
-              <a href="https://cava-payal.netlify.app/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/edenrobe.png" />
-            <div class="layer">
-              <h3>Responsive Edenrobe Clone</h3>
-              <p>
-                Built a compelling replica of a popular Pakistani clothing
-                brand’s website using HTML, CSS, JavaScript, and Bootstrap. This
-                project demonstrates my ability to translate brand identity into
-                a functional and user-friendly e-commerce experience.
-              </p>
-              <a href="https://edenrobe-clone.netlify.app/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/calculatorr.png" />
-            <div class="layer">
-              <h3>Calculator</h3>
-              <p>
-                This is a fully functional calculator I built from scratch using
-                HTML, CSS, and JavaScript. It demonstrates my ability to create
-                a user-friendly interface and implement complex logic without
-                relying on external frameworks.
-              </p>
-              <a href="https://calculator-assign-payal.netlify.app/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/Tic Tac Toe.png" />
-            <div class="layer">
-              <h3>Tic Tac Toe</h3>
-              <p>
-                I built a fully functional Tic Tac Toe game using only HTML,
-                CSS, and JavaScript. This project showcases my ability to create
-                interactive experiences with user input handling, game logic
-                implementation, and DOM manipulation, all without relying on
-                external frameworks.
-              </p>
-              <a href="https://tic-tac-toe-by-payal.netlify.app/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="images/Stone, Paper and Scissors.png" />
-            <div class="layer">
-              <h3>Stone Paper Scissors Game</h3>
-              <p>
-                I built an engaging Stone Paper Scissors game with a twist -
-                it's never-ending! Using HTML, CSS, and JavaScript (no
-                frameworks), I implemented user input handling, computer
-                opponent logic, and a continuous game loop.
-              </p>
-              <a href="https://stone-paper-scissor-by-payal.netlify.app/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
+            <div class="contact-right" data-aos="zoom-in">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="a723f56f-4b3b-4fbb-8853-c426c958081e"
+                />
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn">Submit</button>
+              </form>
             </div>
           </div>
         </div>
-          <span id="dots"></span>
-          <span id="more">
-           <div class="work-list"> 
-            <div class="work">
-              <img src="images/Excel Dashboard.png" />
-              <div class="layer">
-                <h3>Yearly Store Dashboard</h3>
-                <p>
-                  I developed a comprehensive yearly store performance analysis
-                  tool using Microsoft Excel. This project demonstrates my
-                  ability to leverage Excel formulas, charts, and pivot tables
-                  to create an insightful dashboard for visualizing sales
-                  trends, customer data.
-                </p>
-                <a
-                  href="https://docs.google.com/spreadsheets/d/1ebPUPX3dOI6QFVy4rxlevX6LXNZGp7PS/edit?usp=drive_link&ouid=116384847451855622283&rtpof=true&sd=true"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/Hover ppt.png" />
-              <div class="layer">
-                <h3>Presentation with Hover Effects</h3>
-                <p>
-                  I created an engaging PowerPoint presentation that utilizes
-                  hover effects to enhance user experience. I implemented
-                  interactive elements that reveal additional information or
-                  navigate between slides upon hovering.
-                </p>
-                <a
-                  href="https://docs.google.com/presentation/d/1fd5wkC1QzQwkryF4fWo_ueeIkLQDVuZ6/edit?usp=drive_link&ouid=116384847451855622283&rtpof=true&sd=true"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/Aptech ppt.png" />
-              <div class="layer">
-                <h3>A Morphing Presentation</h3>
-                <p>
-                  I designed a visually captivating presentation that leverages
-                  the power of Morph transitions in PowerPoint. This
-                  presentation seamlessly transforms information and visuals,
-                  creating a dynamic and engaging experience for the audience.
-                </p>
-                <a href="projects/Aptech.ppt.mp4"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/Hyperlink ppt.png" />
-              <div class="layer">
-                <h3>Presentation with Hyperlinks</h3>
-                <p>
-                  I created an engaging presentation with hyperlinks, allowing
-                  viewers to delve deeper into topics by seamlessly navigating
-                  to relevant websites, documents, or specific sections within
-                  the slides.
-                </p>
-                <a
-                  href="https://docs.google.com/presentation/d/1jUw-Wb224yhom9s3_4g62fZjyUCRXyA2/edit?usp=drive_link&ouid=116384847451855622283&rtpof=true&sd=true"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/Covid ppt.png" />
-              <div class="layer">
-                <h3>Dynamic Transitions</h3>
-                <p>
-                  Using Morph transitions, I created a visually engaging
-                  presentation that effectively explains the virus, its impacts,
-                  and preventative measures with clear visuals and seamless
-                  transitions.
-                </p>
-                <a href="projects/COVID.mp4"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/Wheel type ppt.png" />
-              <div class="layer">
-                <h3>Morphing Wheel</h3>
-                <p>
-                  I designed an engaging presentation with a Morph-animated
-                  spinning wheel to reveal information or trigger actions,
-                  keeping the audience captivated.
-                </p>
-                <a href="projects/Wheel type ppt.mp4"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/Flyer.png" />
-              <div class="layer">
-                <h3>Flyer Designed in Word</h3>
-                <p>
-                  I designed a visually compelling flyer using Microsoft Word.
-                  This project demonstrates my ability to leverage Word's layout
-                  and design features to create professional-looking flyers for
-                  any purpose
-                </p>
-                <a href="projects/APTECH FLYER PDF.pdf"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/Ad Form.png" />
-              <div class="layer">
-                <h3>Admission Form</h3>
-                <p>
-                  A beautifully designed and informative admission form,
-                  ensuring clarity and a user-friendly experience for
-                  applicants.
-                </p>
-                <a href="projects/Admission Form.pdf"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/cv.png" />
-              <div class="layer">
-                <h3>CV Template</h3>
-                <p>
-                  A visually attractive CV template, designed to help job
-                  seekers stand out and effectively present their
-                  qualifications.
-                </p>
-                <a href="projects/Cv.pdf"><i class="fa-solid fa-link"></i></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/bussiness  card.png" />
-              <div class="layer">
-                <h3>Business Card Design</h3>
-                <p>
-                  A professional and eye-catching business card design,
-                  promoting brand identity and fostering connections.
-                </p>
-                <a href="projects/Bussiness Card.pdf"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/frame.png" />
-              <div class="layer">
-                <h3>Birthday Frame Design</h3>
-                <p>
-                  A festive and customizable birthday collage frame design,
-                  perfect for showcasing multiple pictures and creating a
-                  cherished memory for the recipient.
-                </p>
-                <a href="projects/Birthday Frame.pdf"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/brochure design.png" />
-              <div class="layer">
-                <h3>Brochure Design</h3>
-                <p>
-                  A well-structured and engaging brochure design, effectively
-                  communicating information and promoting a product or service.
-                </p>
-                <a href="projects/Brochure design.pdf"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/certificate.png" />
-              <div class="layer">
-                <h4>Certificate Design</h4>
-                <p>
-                  A professional and formal certificate design, suitable for
-                  acknowledging achievements and recognizing contributions
-                  within a company.
-                </p>
-                <a href="projects/certificate.pdf"
-                  ><i class="fa-solid fa-link"></i
-                ></a>
-              </div>
-            </div>
-          </span>
-        </div>
-        
-      </div>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
+      </section>
 
-    <!------------Contact---------------->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-solid fa-envelope"></i> piyushikumari35@gmail.com
-            </p>
-            <p><i class="fa-solid fa-phone"></i>0330-2564955</p>
-            <div class="social-icons">
-              <a
-                href="https://www.upwork.com/freelancers/~01c0720f4ff76694aa?s=1110580755057594368"
-                ><i class="fa-brands fa-upwork"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/payal-raj-60ba73305/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/Payal-Raj "
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-            <a href="resume/PayalResume (1).pdf" class="btn" download>
-              Download CV</a
-            >
-          </div>
-          <div class="contact-right">
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input
-                type="hidden"
-                name="access_key"
-                value="a723f56f-4b3b-4fbb-8853-c426c958081e"
-              />
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="message"
-                rows="6"
-                placeholder="Your Message"
-              ></textarea>
-              <button type="submit" class="btn">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>
-          Copyright © Payal. All Rights Reserved. Made with HTML, CSS, and
-          JavaScript
-        </p>
-      </div>
-    </div>
+    </main>
+
+    <footer class="copyright">
+          <p>
+            Copyright © Payal. All Rights Reserved. Made with HTML, CSS, and
+            JavaScript
+          </p>
+    </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
 
