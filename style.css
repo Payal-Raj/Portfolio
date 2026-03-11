@@ -477,6 +477,76 @@ form textarea {
   margin-top: 20px;
 }
 
+/* Enhanced Experience Section Styling */
+#experience.active-tab {
+  display: block;
+}
+
+.experience-item {
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #333;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.experience-header {
+  margin-bottom: 15px;
+}
+
+.experience-header h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.experience-date {
+  color: #b54769;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.experience-duties {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience-duties li {
+  color: #ababab;
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.experience-duties li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .experience-header h3 {
+    font-size: 18px;
+  }
+  
+  .experience-date {
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .experience-duties li {
+    font-size: 14px;
+  }
+}
+
 /* ---------- RESPONSIVE DESIGN (MEDIA QUERIES) ---------- */
 
 @media screen and (max-width: 900px) {
